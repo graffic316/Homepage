@@ -1,0 +1,160 @@
+html {
+    font-family: 'undefined';
+    font-size: 16px;
+    background-color: rgb(36, 41, 51);
+  }
+  
+  body {
+    margin: 0px;
+    font-size: 30px;
+    
+  }
+  
+  .container {
+    height: auto;
+    
+  }
+  
+  .bookmark-container {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr); /* 5 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px;
+    width: 75%;
+
+  }
+
+  .bookmark-set {
+    
+    width: 17%; /* Adjust the width for 5 columns */
+    margin: 1em 0.5em;
+    text-align: center;
+  }
+
+  .bookmark-set {
+    transition: box-shadow 400ms ease-in-out 0s;
+    box-shadow: rgba(15, 17, 21, 0.2) 0px 3px 6px 0px;
+    padding: 1rem;
+    background-color: #2e3440;
+    border-radius: 3px;
+    margin: 0em 0.50em;
+    width: 50%;
+    transition: 450ms ease-in 0.1s;
+  }
+
+
+  
+  .bookmark-inner-container {
+    overflow-y: hidden;
+    height: 100%;
+    vertical-align: top;
+    margin: 0 0.5rem 0 0;
+  }
+  
+  .bookmark {
+    font-size: 20px;
+    color: #81a1c1;
+    text-decoration: none;
+    font-weight: 100;
+    display: inline;
+    margin: 0.5em 0em;
+  }
+
+ 
+  .bookmark-title {
+    
+    font-size: 35px;
+    font-weight: 300;
+    color: #d8dee9;
+  }
+
+  .bookmark-set:hover {
+    box-shadow: rgba(15, 17, 21, 0.2) 0px 10px 20px 2px;
+    background-color: #3b4252;
+    transition: 100ms ease-in-out 0s;
+  }
+  
+  
+  .bookmark:hover {
+    color: #4031cc;
+    transition: all 200ms ease-in-out 0s;
+  }
+  
+  #waveform-collage {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+  }
+  #waveform-1 {
+    fill: #434c5e;
+  }
+  #waveform-2 {
+    fill: #3b4252;
+  }
+  #waveform-3 {
+    fill: #2e3440;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+  }
+  
+  .fade-in-faster {
+    opacity: 1;
+    animation-name: fadeInFasterOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  
+  .fade-in-icon {
+    opacity: 1;
+    animation-name: fadeInIconOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3.5s;
+  }
+  
+  @keyframes fadeInFasterOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInWeatherOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInIconOpacity {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
